@@ -30,5 +30,9 @@ div#right {
 }
 form {
     margin: 0 auto;
-    width:300px;
+    width:350px;
+}
+button {
+    width: 75px;
+    font-weight: bold;
 }
