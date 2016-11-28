@@ -19,8 +19,8 @@
         <h3 align="center">Please select a file to upload.</h3>
         <br>
         <form >
-            <input type="file" name="file" accept=".obj">
-            <button>Upload</button>
+            <input type="file" name="uploadfile" id="uploadfile" accept=".obj">
+            <button onclick="uploadFile()">Upload</button>
         </form>
     </div>
 
@@ -29,12 +29,26 @@
         <h3 align="center">Retrieve feedback from test element.</h3>
         <br>
         <form >
-            <input type="file" name="file" accept=".obj">
-            <button>Download</button>
+            <input type="file" name="downloadfile" id="downloadfile" accept=".obj">
+            <button onclick="downloadTXTFile()">Download</button>
             <p>Download feedback as a .txt file.</p>
         </form>
     </div>
 </section>
+<script>
+    function uploadFile()
+    {
+        var uploadFile = document.getElementById("uploadfile");
 
+        // send it to the device
+    }
+
+    function downloadTXTFile()
+    {
+        var downloadFile = document.getElementById("downloadfile");
+
+        // download the file.
+    }
+</script>
 </body>
 </html>
