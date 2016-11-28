@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="projectCSS.css">
+    <meta charset="UTF-8">
+    <title>SE 409 Prototype</title>
+</head>
+<div id="header">
+    <br>
+    <br>
+    <h1>SE 409 Prototype</h1>
+</div>
+<body>
+
+<section>
+    <div id="left">
+        <h2 align="center">Upload</h2>
+        <br>
+        <h3 align="center">Please select a file to upload.</h3>
+        <br>
+        <form >
+            <input type="file" name="uploadfile" id="uploadfile" accept=".obj">
+            <button onclick="uploadFile()">Upload</button>
+        </form>
+    </div>
+
+    <div id="right"> <h2 align="center">Retrieve</h2>
+        <br>
+        <h3 align="center">Retrieve feedback from test element.</h3>
+        <br>
+        <form >
+            <input type="file" name="downloadfile" id="downloadfile" accept=".obj">
+            <button onclick="downloadTXTFile()">Download</button>
+            <p>Download feedback as a .txt file.</p>
+        </form>
+    </div>
+</section>
+<script>
+    function uploadFile()
+    {
+        var uploadFile = document.getElementById("uploadfile");
+
+        // send it to the device
+    }
+
+    function downloadTXTFile()
+    {
+        var downloadFile = document.getElementById("downloadfile");
+
+        // download the file.
+    }
+</script>
+</body>
+</html>
