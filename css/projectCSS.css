@@ -28,11 +28,11 @@ div#right {
     height: 600px;
     background: lightpink;
 }
-form {
-    margin: 0 auto;
-    width:350px;
-}
+
 button {
     width: 75px;
     font-weight: bold;
 }
+ilike-blue-container {
+    @extend .blue, .accent-4;
+  }

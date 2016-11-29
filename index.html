@@ -1,54 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="projectCSS.css">
-    <meta charset="UTF-8">
-    <title>SE 409 Prototype</title>
-</head>
-<div id="header">
-    <br>
-    <br>
-    <h1>SE 409 Prototype</h1>
-</div>
-<body>
+  <head>
+      <link rel="stylesheet" href="css/projectCSS.css">
+      <meta charset="UTF-8">
+      <!--Import Google Icon Font-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
-<section>
-    <div id="left">
-        <h2 align="center">Upload</h2>
-        <br>
-        <h3 align="center">Please select a file to upload.</h3>
-        <br>
-        <form >
-            <input type="file" name="uploadfile" id="uploadfile" accept=".obj">
-            <button onclick="uploadFile()">Upload</button>
-        </form>
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <nav>
+    <div class="nav-wrapper grey darken-2">
+      <a href="#" class="brand-logo center">SE 409 Prototype</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="index.html">Upload</a></li>
+        <li><a href="retrieve.html">Retrieve</a></li>
+      </ul>
     </div>
+  </nav>
+  </head>
+  <body class="brown lighten-5">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+          <script type="text/javascript" src="js/materialize.min.js"></script>
+    <section>
+        <div align="left">
+            <h2 align="center">Upload</h2>
+            <hr>
+            <h5>Please select a file to upload.</h5>
+            <br> <br> <br>
+            <!-- <form >
+                <input type="file" name="uploadfile" id="uploadfile" accept=".obj">
+                <!-- <button onclick="uploadFile()">Upload</button> -->
+            <!-- </form> -->
+            <form action="#" align="left">
+              <div class="file-field input-field" align="left">
+                <div class="btn" align="left">
+                  <span>File</span>
+                  <input type="file">
+                </div>
+                <div class="file-path-wrapper" align="left">
+                  <input class="file-path validate" type="text">
+                </div>
+              </div>
+            </form>
+            <br><br>
+            <a class="waves-effect waves-light btn-large" align="center">Upload</a>
+        </div>
+    </section>
+    <script>
+        function uploadFile()
+        {
+            var uploadFile = document.getElementById("uploadfile");
 
-    <div id="right"> <h2 align="center">Retrieve</h2>
-        <br>
-        <h3 align="center">Retrieve feedback from test element.</h3>
-        <br>
-        <form >
-            <input type="file" name="downloadfile" id="downloadfile" accept=".obj">
-            <button onclick="downloadTXTFile()">Download</button>
-            <p>Download feedback as a .txt file.</p>
-        </form>
-    </div>
-</section>
-<script>
-    function uploadFile()
-    {
-        var uploadFile = document.getElementById("uploadfile");
+            // send it to the device
+        }
 
-        // send it to the device
-    }
+        function downloadTXTFile()
+        {
+            var downloadFile = document.getElementById("downloadfile");
 
-    function downloadTXTFile()
-    {
-        var downloadFile = document.getElementById("downloadfile");
-
-        // download the file.
-    }
-</script>
-</body>
+            // download the file.
+        }
+    </script>
+  </body>
 </html>
