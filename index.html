@@ -53,6 +53,10 @@
         {
             var uploadFile = document.getElementById("uploadfile");
 
+			newFile = fs.createWriteStream('./Objects/object.obj');     
+			oldFile = fs.createReadStream(uploadFile);
+
+			oldFile.pipe(newFile);
             // send it to the device
         }
 
