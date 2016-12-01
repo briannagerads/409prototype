@@ -26,7 +26,7 @@
     <section>
         <div> <h2 align="center">Retrieve</h2>
             <hr>
-            <h5>Retrieve feedback from test element.</h5>
+            <h4>Retrieve feedback from test element.</h4>
             <br>
             <div class="input-field col s12">
               <!-- <select id="feedbackfile" name="feedback">
@@ -37,10 +37,10 @@
               <!-- </select> -->
               <!-- <label>Feedback Files</label> -->
 
-              <a class="waves-effect waves-light btn-large" onclick="(function(){$('.fkd').css('display','block');$('.fk').css('display','none');setTimeout(function(){$('.fkd').css('display','none');$('.fk').css('display','block')},2350)})()">Retrieve feedback from HoloLens</a>
+              <a class="waves-effect waves-light btn-large" onclick="(function(e){$(e).addClass('disabled');$('.fkd').css('display','block');$('.fk').css('display','none');setTimeout(function(){$('.fkd').css('display','none');$('.fk').css('display','block');$(e).removeClass('disabled')},2350)})(this)">Retrieve feedback from HoloLens</a>
               <br><br>
             </div> <br><br>
-              <p>The feedback or .log files:</p> <br>
+              <h5>The feedback or .log files:</h5> <br>
             <a class="fk" style="display:none" href="feedback1.txt" download>Feedback 1</a>
             <span class="fkd" style="display:none">Loading...</span>
             <!-- <form >
